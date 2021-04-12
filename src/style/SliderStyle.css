@@ -1,0 +1,38 @@
+.slider{
+  position: relative;;
+  margin-top: 30px;
+  z-index: 0;
+  margin-bottom: 50px;
+}
+.swiper-container {
+  padding-top: 10px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+  background: #121212;
+}
+
+.swiper-slide {
+  background-position: center;
+  width:400px;
+  height: 200px;
+  background: #121212;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+
+}
+
+.searchform{
+  padding-left: 12vw;
+}
+@media(max-width:600px){
+  .slider{
+    margin-top: 30px;
+  }
+  .swiper-slide {
+    width:300px;
+    height: 200px;
+  }
+  .searchform{
+    padding-left: 2vw;
+  }
+}

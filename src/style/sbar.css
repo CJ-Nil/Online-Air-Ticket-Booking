@@ -1,0 +1,27 @@
+
+.sbar{
+position: sticky;
+ display: inline-flex;
+ padding: 0px;
+}
+.sbar input{
+  width: 55px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color:transparent;
+  background-image: url(../icon/cs2.jpg);
+  background-position: 0px 0px; 
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 0px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  
+}
+
+.sbar input:hover {
+  width: 500px;
+  background-color: rgba(88, 228, 247, 0.801);
+}

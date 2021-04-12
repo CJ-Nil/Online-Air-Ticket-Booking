@@ -1,0 +1,48 @@
+.head{
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1.5fr;
+    background: #739e90;
+
+}
+.title{
+    padding: 10px;
+    font-size: 3.5vh;
+    text-align: left;
+    text-shadow: rgba(2, 2, 2, 0.774);
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+.title span{
+    justify-self: left;
+    color: hsla(343, 41%, 26%, 0.952);
+    text-align: left;
+}
+.note{
+    font-family: cursive;
+    text-align: left;
+    color: darkgreen;
+    font-size:2.5vh;
+    
+}
+
+
+
+
+
+
+
+@media(max-width:450px){
+    .title{
+        text-align: center;
+    }
+    .note{
+        
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+}

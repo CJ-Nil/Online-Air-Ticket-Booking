@@ -1,0 +1,48 @@
+.card {
+    height: 150px;
+    width: 300px;
+    flex: 0 0 auto;
+    
+    margin-right: 5px;
+    text-align: center;
+    animation: card_animate 0.5s linear ;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  @keyframes card_animate{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height:150px;
+    }
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center;
+    animation: card_animate 0.5s linear ;
+    border-radius: 10px;
+    z-index: -10;
+}
+.cardText{
+    position: absolute;
+    top: 0%;
+    font-weight: bolder;
+    display:flex;
+}
+.cardText div{
+    font-size: 10px;
+    font-weight: bolder;
+    height: 20px;
+    width:auto;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background:linear-gradient(-45deg, #00d0ca, #69c938);
+    text-align: center;
+    border-radius: 10px 0px 10px;
+}

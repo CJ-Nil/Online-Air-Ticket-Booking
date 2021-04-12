@@ -1,0 +1,78 @@
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    transition: all 1s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+     -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .scrolling-wrapper:active{
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
+  
+  .card-end{
+      min-width: 30px;
+      min-height: 150px;
+  }
+  .h-container{
+      position: relative;
+      font-size: 30px;
+      color: white;
+      height: 200px;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+      align-content: center;
+      text-align: center;
+  }
+  .leftArrow{
+      position: absolute;
+      font-size: 40px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      display: flex;
+      z-index: 1;
+      cursor: pointer;
+      margin-left: 2px;
+      height: 50px;
+     top: 50px;
+
+  }
+  .rightArrow{
+    position: absolute;
+    font-size: 40px;
+    height: 50px;
+    top:50px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    z-index: 1;
+    cursor: pointer;
+    margin-right: 2px;
+    text-align: center;
+  }
+
+
+
+
+
+@keyframes card_animate{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height:150px;
+    }
+}

@@ -1,0 +1,162 @@
+.m-info-container{
+    position: fixed; 
+    display: grid;
+    flex-direction: column;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+}
+.m-info-component{
+    align-self: center;
+    justify-self: center;
+    background: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    height:auto;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
+.m-info-header{
+    display:grid;
+    grid-template-columns:7fr 1fr;
+    height: 50px;
+    align-content: center;
+
+
+}
+.m-info-close{
+    font-size: 60px;
+    justify-self: right;
+    cursor: pointer;
+    color: crimson;
+    margin-bottom:10px;
+    padding-right: 10px;
+}
+.image-title{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+.info-body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.1fr 1fr;
+
+}
+.data-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    font-size: 1.2rem;
+    height: 90%;
+    margin-bottom: 10px;
+    color: teal;
+    justify-content: center;
+
+}
+
+.v-info{
+    display:flex;
+    flex-direction:column;
+    justify-self:center;
+    justify-content: center;
+    margin: 5px;
+    height: 100%;
+    width: 90%;
+    background:linear-gradient(-45deg, #a7c8b7, #e79e9e, #a1ade4, #e8e99f);
+    
+}
+.v-icon {
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    
+}
+.v-data{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: center;
+    align-self: center;
+}
+
+.d-info{
+    display:flex;
+    flex-direction:column;
+    justify-self:center;
+    justify-content: center;
+    background:linear-gradient(-45deg, #aba8c9, #c7a073, #c0a9ff, #e78c85);
+    margin: 5px;
+    height: 100%;
+    width: 90%;
+}
+.d-icon{
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+}
+.d-data{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-self: center;
+    align-self: center;
+}
+
+.r-info{
+    display:flex;
+    flex-direction:column;
+    justify-self: center;
+    background:linear-gradient(-45deg, #fabff1, #ecb8b8, #ac9cd8, #a0e7b7);
+    margin-top: 5px;
+    height: 100%;
+    width: 95%;
+}
+.r-icon{
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    color: darkorange;
+}
+.r-count{
+
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    color: teal;
+}
+.image-info{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.type{
+    color: #d77600;
+}
+.i-row1{
+    display: grid;
+    grid-template-columns: 2fr 0.1fr 1fr;
+    grid-column: 5px;
+}
+.i-row2{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-column: 10px;
+}
+.cam{
+    text-justify: left;
+}
+
+.bg-animeted2 {
+    background: linear-gradient(-45deg, #d77600, #22ac2a, #ffa4e9, #69c938);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+  }
+@media(max-width:600px){
+    .m-info-component{
+        width:100%;
+    }
+}

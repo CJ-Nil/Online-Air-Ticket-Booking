@@ -1,0 +1,104 @@
+.explore{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.e-header{
+    background-color: #333d3d;
+    height: 100px;
+    display: flex;
+    text-align: left;
+    font-size:  3vmax;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    flex-direction:column ;
+    
+
+}
+.e-topic{
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-weight: bolder;
+    font-size: 1.4em;
+    margin-left: 30px;
+}
+.e-more{
+    text-align: right;
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+}
+.topicContainer{
+    height:177px;
+    width: 100%;
+    transition: 1s;
+}
+.e-title{
+ font-family: fantasy;
+ font-weight:100;
+margin-top: 2vh;
+padding-bottom: 0em;
+align-self: center;
+}
+.searchBox{
+    padding-top: 0px;
+    margin-top:2vh;
+    align-self: center;
+    width: 80vmin;
+    font-size: 30px;
+    transition: 1s;
+}
+.e-input{
+    display: flex;
+    background: #f19367;
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.e-input input{
+        width: 100%;
+        box-sizing: border-box;
+        border:none;
+        border-radius: 10px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        outline: none;
+       
+}
+.s-icon{
+    position: absolute;
+    left: 14px;
+    color: rgb(92, 89, 81);
+}
+.c-icon{
+    position: absolute;
+    top:22%;
+    right: 2%;
+    font-size: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+  
+  .card-end{
+      min-width: 30px;
+      min-height: 150px;
+  }
+
+@media(max-width:600px){
+    .explore{
+        margin-top: 100px;
+    }
+    .e-header{
+        height:125px;
+    }
+    .e-topic{
+        font-size: 1em;
+    }
+}
