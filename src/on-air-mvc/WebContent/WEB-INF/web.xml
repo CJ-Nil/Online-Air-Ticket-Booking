@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>on-air-mvc</display-name>
+  <context-param>
+  	<param-name>db</param-name>
+  	<param-value>jdbc:mysql://localhost:3306/onair</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>driver</param-name>
+  	<param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>user</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>pwd</param-name>
+  	<param-value>Chandanila@1997</param-value>
+  </context-param>
+  
+  
+	<filter>
+	  <filter-name>CorsFilter</filter-name>
+	  <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+	  <init-param>
+	    <param-name>cors.allowed.origins</param-name>
+	    <param-value>*</param-value>
+	  </init-param>
+	</filter>
+	<filter-mapping>
+	  <filter-name>CorsFilter</filter-name>
+	  <url-pattern>/*</url-pattern>
+	</filter-mapping>
+  
+</web-app>
